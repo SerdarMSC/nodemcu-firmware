@@ -1,4 +1,4 @@
-uart.setup(0,9600,8,0,1,0)
+uart.setup(0, 9600, 8, uart.PARITY_NONE, uart.STOPBITS_1, 0)
 sv=net.createServer(net.TCP, 60)
 global_c = nil
 sv:listen(9999, function(c)
